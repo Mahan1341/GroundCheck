@@ -9,7 +9,7 @@ import pytest
 
 spec = importlib.util.spec_from_file_location(
     "claim_grounding_projection",
-    Path(__file__).resolve().parents[1] / "scripts/claim_grounding_projection.py",
+    Path(__file__).resolve().parents[1] / "experiments/scripts/claim_grounding_projection.py",
 )
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)

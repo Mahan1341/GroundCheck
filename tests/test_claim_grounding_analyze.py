@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-scripts = Path(__file__).resolve().parents[1] / "scripts"
+scripts = Path(__file__).resolve().parents[1] / "experiments/scripts"
 sys.path.insert(0, str(scripts))
 spec = importlib.util.spec_from_file_location(
     "claim_grounding_analyze", scripts / "claim_grounding_analyze.py"

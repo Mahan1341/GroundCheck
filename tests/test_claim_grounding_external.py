@@ -3,7 +3,7 @@
 import importlib.util
 from pathlib import Path
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts/claim_grounding_external.py"
+SCRIPT = Path(__file__).resolve().parents[1] / "experiments/scripts/claim_grounding_external.py"
 SPEC = importlib.util.spec_from_file_location("claim_grounding_external", SCRIPT)
 adapter = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(adapter)

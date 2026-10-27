@@ -8,10 +8,10 @@ from pathlib import Path
 
 import pytest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "experiments/scripts"))
 spec = importlib.util.spec_from_file_location(
     "claim_grounding_context",
-    Path(__file__).resolve().parents[1] / "scripts/claim_grounding_context.py",
+    Path(__file__).resolve().parents[1] / "experiments/scripts/claim_grounding_context.py",
 )
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
