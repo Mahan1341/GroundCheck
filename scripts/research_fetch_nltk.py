@@ -1,33 +1,11 @@
-"""Restore precisely hashed Punkt tables, without running package download hooks."""
+"""Compatibility entrypoint for research experiments."""
 
-import hashlib
-import io
-import json
-import urllib.request
-import zipfile
+import sys
 from pathlib import Path
 
-root = Path(__file__).resolve().parents[1]
-config = json.loads((root / "configs/nltk-data.json").read_text())
-destination = root / "models/nltk_data/tokenizers"
-archive_path = destination / "punkt_tab.zip"
-if archive_path.exists():
-    content = archive_path.read_bytes()
-else:
-    url = (
-        f"https://raw.githubusercontent.com/{config['repository']}/"
-        f"{config['revision']}/{config['path']}"
-    )
-    with urllib.request.urlopen(url, timeout=60) as response:
-        content = response.read()
-if hashlib.sha256(content).hexdigest() != config["sha256"]:
-    raise ValueError("Punkt archive differs from the recorded experiment")
-destination.mkdir(parents=True, exist_ok=True)
-with zipfile.ZipFile(io.BytesIO(content)) as archive:
-    for name in archive.namelist():
-        if not (destination / name).resolve().is_relative_to(destination.resolve()):
-            raise ValueError("unsafe archive path")
-    archive.extractall(destination)
-if not archive_path.exists():
-    archive_path.write_bytes(content)
-print("Verified and restored pinned Punkt tables", config["sha256"])
+_LEGACY_FILE = Path(__file__).resolve()
+_IMPL_DIR = _LEGACY_FILE.parents[1] / "experiments" / "scripts"
+if str(_IMPL_DIR) not in sys.path:
+    sys.path.insert(0, str(_IMPL_DIR))
+_IMPL = _IMPL_DIR / "research_fetch_nltk.py"
+exec(compile(_IMPL.read_bytes(), str(_LEGACY_FILE), "exec"), globals())
