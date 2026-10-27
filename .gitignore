@@ -10,11 +10,11 @@ dist/
 .idea/
 .vscode/
 # Never distribute local datasets, models, outputs or credentials by accident
-data/
-models/
-predictions/
-reports/
-research_snapshots/
+/data/
+/models/
+/predictions/
+/reports/
+/research_snapshots/
 *.safetensors
 *.bin
 *.pt
