@@ -35,7 +35,7 @@ token thresholds differ.
 
 ## Quick start
 
-Python **3.11 or 3.12**; run research scripts from the checkout root.
+Python **3.11 or 3.12**; run research entrypoints from the checkout root (canonical implementations live in `experiments/scripts/`).
 
 ```bash
 git clone https://github.com/Mahan1341/GroundCheck.git
@@ -114,7 +114,9 @@ In this example B7 flags the wrong answer but also highlights the extraneous wor
 | Graph, normalization, permutation, saliency, context subtraction | Mechanism tests | Experimental; negative results retained |
 
 Stable inference lives in `src/grounded_hallucination_lab/inference.py`. Experimental
-components live in `src/grounded_hallucination_lab/research/` and research scripts.
+components live in `src/grounded_hallucination_lab/research/`; research plans, reports
+and executable scripts are organized under `experiments/`. Historical `scripts/`
+entrypoints remain as compatibility shims for old commands.
 There is no automatic transition from a diagnostic win to a production model.
 
 ## Evaluation protocol
@@ -137,7 +139,7 @@ Do not compare the following as one leaderboard: they use different tasks and po
 
 * **RAGTruth QA outer dev, historical Phase 2A:** 1,008 responses / 168 sources.
   TF-IDF macro-F1 **0.5909**, hallucination F1 **0.5000**; majority macro-F1 **0.4102**.
-  The threshold was selected on calibration before dev. [Report](docs/research/PHASE2A_RESULTS.md).
+  The threshold was selected on calibration before dev. [Report](experiments/reports/PHASE2A_RESULTS.md).
 * **RAGTruth QA reused inner:** historical B7 macro-F1 about **0.7959** on 648
   responses / 108 sources. Later development subsets and FP32 runs have different
   denominators; they are not new independent confirmation. [B7 reproduction](docs/CHECKPOINT.md).
@@ -145,13 +147,13 @@ Do not compare the following as one leaderboard: they use different tasks and po
   derived from human labels on extracted triplets. FactCG segmented macro-F1
   **0.7037**, B7 **0.6338**. No human span labels; triplet completeness limits the
   interpretation. This collection is now used and closed to new decisions.
-  [Discovery report](docs/research/RESEARCH_LOOP_VERDICT.md).
+  [Discovery report](experiments/reports/RESEARCH_LOOP_VERDICT.md).
 * **DiaSumFact SAMSum transfer:** dialogue summarization, 295 summaries / 59 sources;
   284 summaries have uniquely alignable error strings for localization. FactCG
   segmented macro-F1/token-F1 **0.7255/0.2856**, B7 **0.5067/0.1610**. Author-released
   human annotations, not assistant review; exact-span localization remains weak.
   Different error taxonomy and incomplete contamination audit. This set is now used.
-  [Claim-grounding report](docs/research/CLAIM_GROUNDING_RESEARCH.md).
+  [Claim-grounding report](experiments/reports/CLAIM_GROUNDING_RESEARCH.md).
 
 Full historical model/data caches and predictions are intentionally not distributed.
 The source, configs and reports permit inspection and new reproduction runs; they do
