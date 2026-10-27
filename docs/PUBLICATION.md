@@ -12,7 +12,7 @@ The research workspace remains separate so old source freezes still verify.
   accidentally from the original research workspace.
 * CPU neural dependencies installed separately; `pip check` passed. Exact tested
   environment: `configs/inference-cpu-lock.txt` (Windows CPU, not a universal CUDA lock).
-* Full offline suite with neural dependencies installed: **375 passed, 6 skipped**.
+* Full offline suite from a Git clone with neural dependencies: **376 passed, 6 skipped**.
   Actual B7 authored-example integration: **6 passed**. Without optional neural
   packages additional tests skip; real corpus/model research tests remain opt-in.
 * Ruff passed. Original base/research dependency checks also passed.
@@ -31,6 +31,12 @@ results. GPU/model evaluation is not part of CI. No new training or outer RAGTru
 evaluation was performed.
 
 ## Publication audit
+
+The initial GitHub CI caught an export-only packaging error: an unanchored `data/`
+ignore rule also excluded the library's `src/.../data` modules. Root-anchored rules
+fixed it; a regression protects both library inclusion and private-data exclusion.
+The corrected committed tree was cloned, installed again and fully tested. The
+failed initial workflow remains in public history; it is not described as a pass.
 
 All staged public files were checked for credential signatures, local absolute
 paths, binary/weight extensions, oversized files and excluded data/cache directories.
