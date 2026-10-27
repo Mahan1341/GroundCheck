@@ -1,0 +1,34 @@
+# Local environments and build outputs
+.venv*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+.idea/
+.vscode/
+# Never distribute local datasets, models, outputs or credentials by accident
+data/
+models/
+predictions/
+reports/
+research_snapshots/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.npz
+*.npy
+*.joblib
+*.zip
+*.log
+.env
+.env.*
+*.pem
+*.key
+# Only the explicitly authored fixture/example JSONL is suitable for publication.
+*.jsonl
+!tests/fixtures/*.jsonl
+!examples/*.jsonl

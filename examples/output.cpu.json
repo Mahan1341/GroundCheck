@@ -1,0 +1,43 @@
+{
+  "hallucination_risk": 0.7190917730331421,
+  "risk_is_calibrated_probability": false,
+  "prediction": true,
+  "status": "scored",
+  "spans": [
+    {
+      "start": 0,
+      "end": 3,
+      "score": 0.6600769758224487,
+      "text": "The"
+    },
+    {
+      "start": 18,
+      "end": 28,
+      "score": 0.7190917730331421,
+      "text": "has twenty"
+    }
+  ],
+  "model": {
+    "id": "groundcheck-b7-inner-seed42",
+    "profile_origin": "bundled-B7-reference",
+    "weights_sha256": "7c6fb6f5f842863175f6422a84acd9c85d5056c3144ec73738b3e3a83464b4f4",
+    "response_threshold": 0.37612172961235046,
+    "token_threshold": 0.5,
+    "decision_rule": "risk >= response_threshold",
+    "precision": "float32",
+    "batch_size": 1,
+    "device": "cpu",
+    "tf32": false
+  },
+  "coverage": {
+    "answer_tokens": 7,
+    "prefix_tokens": 35,
+    "windows": 1,
+    "answer_coverage": 1.0,
+    "evidence_coverage": 1.0,
+    "truncated_tokens": 0,
+    "max_window_tokens": 45
+  },
+  "warnings": [],
+  "id": "authored-demo"
+}

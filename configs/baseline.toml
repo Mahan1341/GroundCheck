@@ -1,0 +1,9 @@
+seed = 42
+dev_fraction = 0.2
+# Preserve Phase 1 dev; reserve 20% of its old train groups for tuning only.
+calibration_fraction = 0.2
+calibration_seed = 42
+# train=fit; calibration=threshold/hyperparameters; dev=frozen evaluation.
+# Official test labels are sealed; final evaluation needs separate authorization.
+implicit_true = "include"
+quality = "all"

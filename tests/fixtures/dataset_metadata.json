@@ -1,0 +1,5 @@
+{
+  "synthetic": true,
+  "description": "Hand-authored toy QA, not copied from RAGTruth. Six train sources and two test sources, two responses each. No performance claim.",
+  "created": "2026-10-22"
+}

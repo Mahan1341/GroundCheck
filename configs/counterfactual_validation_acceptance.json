@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-10-23T06:01:38.012Z",
+  "role": "READ-ONLY inner-validation parent probe; NEVER training data",
+  "selection": "All strict candidates reviewed before any model scores; exact normalized substring absent from all inner-fit evidence",
+  "accepted": [
+    {
+      "source_id": "12370",
+      "start": 86,
+      "end": 88,
+      "number": "19",
+      "text_sha256": "131361929eff0ff1ba73e87598e761e07b3e3d70aeb9b614b0ebf422de98d029"
+    },
+    {
+      "source_id": "12378",
+      "start": 38,
+      "end": 39,
+      "number": "2",
+      "text_sha256": "9cfb5b5733d5551aacf997268629d12ee3ec18c2474d7f4160ee831bd3fd2f40"
+    },
+    {
+      "source_id": "14305",
+      "start": 23,
+      "end": 24,
+      "number": "5",
+      "text_sha256": "99b8fe959ae6816c8419bbb7fb96c4e1921c38f92f02ebfe7e3985973d4b1427"
+    },
+    {
+      "source_id": "14320",
+      "start": 136,
+      "end": 138,
+      "number": "20",
+      "text_sha256": "19c1402d0a9691a7264433c04016ba3c94c8125a121baab4810a688ec7d6e7a6"
+    },
+    {
+      "source_id": "14325",
+      "start": 19,
+      "end": 21,
+      "number": "10",
+      "text_sha256": "f98a869decdf0450a3549474a5fd7577c587702cb5737a17ce77c484164da1ba"
+    },
+    {
+      "source_id": "14364",
+      "start": 110,
+      "end": 111,
+      "number": "3",
+      "text_sha256": "6fe39b8ecd7d41d37f01cc2ad92ea58fc12c6055735b8839cebe66f0063910fa"
+    },
+    {
+      "source_id": "15191",
+      "start": 44,
+      "end": 45,
+      "number": "2",
+      "text_sha256": "b6572ded066b7700b4810205e3e6e38807a75e25049894ffd28f515ea90940a3"
+    }
+  ],
+  "rejected": [
+    {
+      "source_id": "14364",
+      "text_sha256": "d36e1ff05b24e50210ac2dbbe31edeb7f7c603d6b53b849737d27dd5216075d8",
+      "reason": "generally: non-exact frequency/retention statement"
+    },
+    {
+      "source_id": "15265",
+      "text_sha256": "fec8694c7810053a2227b4d272063899cce6775840686ec4509fc59d9974a364",
+      "reason": "up to: upper bound does not support an exact-value conflict"
+    }
+  ],
+  "excluded_normalized_fit_overlap": [],
+  "n": 7,
+  "sources": 7
+}

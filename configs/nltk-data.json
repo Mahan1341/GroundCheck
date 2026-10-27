@@ -1,0 +1,8 @@
+{
+  "repository": "nltk/nltk_data",
+  "revision": "4f15a3d89eefe9748ec1c05be495d91289197155",
+  "path": "packages/tokenizers/punkt_tab.zip",
+  "sha256": "e57f64187974277726a3417ca6f181ec5403676c717672eef6a748a7b20e0106",
+  "pinned_url_bytes_verified": false,
+  "verification_note": "Local archive SHA256 pinned. Latest file commit resolved via GitHub API; subsequent pinned URL/blob check failed due DNS. Reproduction fails closed if bytes differ."
+}

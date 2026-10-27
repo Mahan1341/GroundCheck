@@ -1,0 +1,6 @@
+{
+  "id": "authored-demo",
+  "question": "How many sensors does the fictional Aster station have?",
+  "evidence": "The fictional Aster station has twelve sensors. The fictional Birch station has twenty sensors.",
+  "answer": "The Aster station has twenty sensors."
+}

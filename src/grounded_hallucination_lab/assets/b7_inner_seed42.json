@@ -1,0 +1,20 @@
+{
+  "model_id": "groundcheck-b7-inner-seed42",
+  "backbone": "answerdotai/ModernBERT-base",
+  "backbone_revision": "8949b909ec900327062f0ebf497f51aef5e6f0c8",
+  "seed": 42,
+  "response_threshold": 0.37612172961235046,
+  "token_threshold": 0.5,
+  "max_length": 2048,
+  "precision": "float32",
+  "batch_size": 1,
+  "risk_calibrated": false,
+  "evaluation": "reused RAGTruth train-side inner-validation; not official test",
+  "files": {
+    "config.json": "0421ace7b052252f06454420d04a37debaa10c809a81283e829e0b12e08e56f4",
+    "model.safetensors": "7c6fb6f5f842863175f6422a84acd9c85d5056c3144ec73738b3e3a83464b4f4",
+    "special_tokens_map.json": "e386620cb5e9f6570fe98481fde86167b4236cdebdcc42308652574122561619",
+    "tokenizer.json": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30",
+    "tokenizer_config.json": "973134a8b0937f6a3a3567a5cc5cbd05a95974af1f8d2173c43dd09cf2f0e4bb"
+  }
+}

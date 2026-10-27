@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grounded-hallucination-lab"
+version = "0.1.0"
+description = "Evidence-grounded hallucination detection and reproducible evaluation"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.2.6", "scipy==1.15.3", "scikit-learn==1.7.2", "joblib==1.6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5", "ruff==0.11.13"]
+neural = ["torch==2.8.0", "transformers==4.51.3", "safetensors==0.5.3"]
+
+[project.scripts]
+ghl = "grounded_hallucination_lab.cli:main"
+groundcheck = "grounded_hallucination_lab.inference:main"
+
+[tool.setuptools.package-data]
+grounded_hallucination_lab = ["assets/*.json"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Preserve the immutable pre-confirmation helper/hash (one 102-character metadata line).
+"scripts/discovery_confirm.py" = ["E501"]

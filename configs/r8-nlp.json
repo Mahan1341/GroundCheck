@@ -1,0 +1,11 @@
+{
+  "url": "https://raw.githubusercontent.com/nltk/nltk_data/4f15a3d89eefe9748ec1c05be495d91289197155/packages/taggers/averaged_perceptron_tagger_eng.zip",
+  "repository_revision": "4f15a3d89eefe9748ec1c05be495d91289197155",
+  "bytes": 1539115,
+  "sha256": "6025f530624335c67d6547d44757b357b4e79bae030a0383e9887a92c1718f0b",
+  "files": {
+    "models\\nltk_data\\taggers\\averaged_perceptron_tagger_eng\\averaged_perceptron_tagger_eng.classes.json": "d152ffa69d45b8357276341a3d592c6c025911d52ec0d9068d4f382560dd48b6",
+    "models\\nltk_data\\taggers\\averaged_perceptron_tagger_eng\\averaged_perceptron_tagger_eng.tagdict.json": "4c713731cb06727736962bc8cd94ad919217a040e76691059af99bc0c2c9c246",
+    "models\\nltk_data\\taggers\\averaged_perceptron_tagger_eng\\averaged_perceptron_tagger_eng.weights.json": "789e8e35f6fac656d9b7eccea29ba4e8a137cbb5b525dd31f39e4291a9e80832"
+  }
+}

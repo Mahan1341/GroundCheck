@@ -1,0 +1,168 @@
+{
+  "nli": {
+    "repo_id": "cross-encoder/nli-deberta-v3-small",
+    "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "license": "apache-2.0",
+    "files": [
+      ".gitattributes",
+      "CESoftmaxAccuracyEvaluator_AllNLI-dev_results.csv",
+      "README.md",
+      "added_tokens.json",
+      "config.json",
+      "model.safetensors",
+      "onnx/model.onnx",
+      "onnx/model_O1.onnx",
+      "onnx/model_O2.onnx",
+      "onnx/model_O3.onnx",
+      "onnx/model_O4.onnx",
+      "onnx/model_qint8_arm64.onnx",
+      "onnx/model_qint8_avx512.onnx",
+      "onnx/model_qint8_avx512_vnni.onnx",
+      "onnx/model_quint8_avx2.onnx",
+      "pytorch_model.bin",
+      "special_tokens_map.json",
+      "spm.model",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ]
+  },
+  "minicheck": {
+    "repo_id": "lytang/MiniCheck-DeBERTa-v3-Large",
+    "revision": "2f2d01a54fa022a7ffadb76260e1ea8bc88c82bb",
+    "license": "mit",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "added_tokens.json",
+      "config.json",
+      "cost-vs-bacc.png",
+      "performance_focused.png",
+      "pytorch_model.bin",
+      "special_tokens_map.json",
+      "spm.model",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ]
+  },
+  "hhem": {
+    "repo_id": "vectara/hallucination_evaluation_model",
+    "revision": "de9a5e6ba9ba49531a022dba17e35ffeb2a6fad8",
+    "license": "apache-2.0",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "candle.png",
+      "config.json",
+      "configuration_hhem_v2.py",
+      "model.safetensors",
+      "modeling_hhem_v2.py"
+    ]
+  },
+  "backbone": {
+    "repo_id": "answerdotai/ModernBERT-base",
+    "revision": "8949b909ec900327062f0ebf497f51aef5e6f0c8",
+    "license": "apache-2.0",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "config.json",
+      "model.safetensors",
+      "onnx/model.onnx",
+      "onnx/model_bnb4.onnx",
+      "onnx/model_fp16.onnx",
+      "onnx/model_int8.onnx",
+      "onnx/model_q4.onnx",
+      "onnx/model_q4f16.onnx",
+      "onnx/model_quantized.onnx",
+      "onnx/model_uint8.onnx",
+      "pytorch_model.bin",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ]
+  },
+  "hhem_foundation": {
+    "repo_id": "google/flan-t5-base",
+    "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+    "license": "apache-2.0",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "config.json",
+      "flax_model.msgpack",
+      "generation_config.json",
+      "model.safetensors",
+      "pytorch_model.bin",
+      "special_tokens_map.json",
+      "spiece.model",
+      "tf_model.h5",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ]
+  },
+  "fallback": {
+    "repo_id": "distilbert/distilbert-base-uncased",
+    "revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+    "license": "apache-2.0",
+    "files": [
+      ".gitattributes",
+      "LICENSE",
+      "README.md",
+      "config.json",
+      "flax_model.msgpack",
+      "model.safetensors",
+      "pytorch_model.bin",
+      "rust_model.ot",
+      "tf_model.h5",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "vocab.txt"
+    ]
+  },
+  "lettuce": {
+    "repo_id": "KRLabsOrg/lettucedect-base-modernbert-en-v1",
+    "revision": "bbd77832f52f9bd87546a3924c032467921f5c34",
+    "license": "mit",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "config.json",
+      "model.safetensors",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ]
+  },
+  "guard": {
+    "repo_id": "Horizon-Labs/hallucination-guard-base",
+    "revision": "f0aaaac7c39073b4528191261e874d9664f14254",
+    "license": "apache-2.0",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "code/ground/build_ground.py",
+      "code/ground/build_ground_v1.py",
+      "code/ground/build_ground_v2.py",
+      "code/ground/build_ground_v3.py",
+      "code/ground/evaluate_ground.py",
+      "code/ground/gen_c2d.py",
+      "code/ground/gen_ground.py",
+      "code/ground/gen_ground_v2.py",
+      "code/ground/translate_halueval.py",
+      "code/train/export_onnx.py",
+      "code/train/train.py",
+      "config.json",
+      "eval/baselines.json",
+      "eval/this_model.json",
+      "model.safetensors",
+      "onnx/model.onnx",
+      "onnx/model_quantized.onnx",
+      "onnx/quantization_check.json",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "training/train_log.json",
+      "training/val_metrics.json"
+    ]
+  }
+}

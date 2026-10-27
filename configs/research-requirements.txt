@@ -1,0 +1,9 @@
+# Install torch separately from the CUDA 12.8 index; keep Phase 2A .venv unchanged.
+transformers==4.51.3
+huggingface-hub==0.30.2
+accelerate==1.6.0
+sentencepiece==0.2.0
+protobuf==5.29.4
+nltk==3.9.1
+psutil==7.0.0
+safetensors==0.5.3

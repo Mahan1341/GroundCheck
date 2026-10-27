@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the repository URL and the exact commit used, and cite upstream models/datasets separately."
+title: "GroundCheck"
+type: software
+authors:
+  - family-names: Garanin
+    given-names: Vladimir
+repository-code: "https://github.com/Mahan1341/GroundCheck"
+license: MIT
