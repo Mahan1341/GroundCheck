@@ -38,3 +38,4 @@ select = ["E", "F", "I", "UP", "B"]
 [tool.ruff.lint.per-file-ignores]
 # Preserve the immutable pre-confirmation helper/hash (one 102-character metadata line).
 "scripts/discovery_confirm.py" = ["E501"]
+"experiments/scripts/discovery_confirm.py" = ["E501"]

@@ -1,6 +1,7 @@
-"""Compatibility entrypoint. Implementation lives in experiments/scripts/research_r4.py."""
-from pathlib import Path
+"""Compatibility entrypoint for research experiments."""
+
 import sys
+from pathlib import Path
 
 _LEGACY_FILE = Path(__file__).resolve()
 _IMPL_DIR = _LEGACY_FILE.parents[1] / "experiments" / "scripts"
