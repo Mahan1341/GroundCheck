@@ -4,7 +4,7 @@ import itertools
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "experiments/scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from claim_grounding_c2_analyze import (  # noqa: E402
     ARMS,

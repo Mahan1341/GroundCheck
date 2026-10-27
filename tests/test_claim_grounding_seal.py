@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pytest
 
-SCRIPT = Path(__file__).resolve().parents[1] / "experiments/scripts/claim_grounding_seal.py"
+SCRIPT = Path(__file__).resolve().parents[1] / "scripts/claim_grounding_seal.py"
 SPEC = importlib.util.spec_from_file_location("claim_grounding_seal", SCRIPT)
 seal = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(seal)

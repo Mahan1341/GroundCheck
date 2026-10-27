@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 
 spec = importlib.util.spec_from_file_location(
-    "discovery_core", Path(__file__).resolve().parents[1] / "experiments/scripts/discovery_core.py"
+    "discovery_core", Path(__file__).resolve().parents[1] / "scripts/discovery_core.py"
 )
 core = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(core)
@@ -39,7 +39,7 @@ def test_readout_rejects_broken_alignment():
 
 def test_claim_projection_uses_offsets_and_maximum_context_support():
     verifier_spec = importlib.util.spec_from_file_location(
-        "discovery_verifier", Path(__file__).resolve().parents[1] / "experiments/scripts/discovery_verifier.py"
+        "discovery_verifier", Path(__file__).resolve().parents[1] / "scripts/discovery_verifier.py"
     )
     verifier = importlib.util.module_from_spec(verifier_spec)
     verifier_spec.loader.exec_module(verifier)
